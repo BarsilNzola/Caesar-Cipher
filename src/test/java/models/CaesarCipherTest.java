@@ -28,4 +28,10 @@ public class CaesarCipherTest {
         CaesarCipher testEncryption = new CaesarCipher("a", 1);
         assertEquals("b", testEncryption.cipherEncryption());
     }
+
+    @Test
+    public void newCaesarCipher_cipherDecryption() {
+        CaesarCipher testEncryption = new CaesarCipher("b", 1);
+        assertEquals("a", testEncryption.cipherDecryption());
+    }
 }
