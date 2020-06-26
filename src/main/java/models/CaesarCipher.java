@@ -2,13 +2,13 @@ package models;
 
 public class CaesarCipher {
 
-    private char letter;
+    private String letter;
 
-    public CaesarCipher(char letter, int shift) {
+    public CaesarCipher(String letter, int shift) {
         this.letter = letter;
     }
 
-    public char getLetter() {
+    public String getLetter() {
         return this.letter;
     }
 }
