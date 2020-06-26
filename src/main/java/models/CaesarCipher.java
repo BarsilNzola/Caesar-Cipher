@@ -17,4 +17,17 @@ public class CaesarCipher {
     public int getShift() {
         return this.shift;
     }
+
+    public String cipherEncryption() {
+        String alphabet = "abcdefghijklmnopqrstuvwxyz";
+        String cipherCode = "";
+
+        for (int i = 0; i< letter.length(); i++){
+            int indexOfText = alphabet.indexOf(letter.charAt(i));
+            int indexOfEncryption = (indexOfText + shift) % 26;
+            char encryptionLetter = alphabet.charAt(indexOfEncryption);
+            cipherCode += encryptionLetter;
+        }
+        return cipherCode;
+    }
 }
