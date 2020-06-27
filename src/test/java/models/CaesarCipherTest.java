@@ -46,4 +46,10 @@ public class CaesarCipherTest {
         CaesarCipher testEncryption = new CaesarCipher("cbstjm", 1);
         assertEquals("barsil", testEncryption.cipherDecryption());
     }
+
+    @Test
+    public void newCaesarCipher_testWithWord_shift_3() {
+        CaesarCipher testEncryption = new CaesarCipher("barsil", 3);
+        assertEquals("eduvlo", testEncryption.cipherEncryption());
+    }
 }
