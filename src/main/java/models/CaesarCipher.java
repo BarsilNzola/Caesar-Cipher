@@ -4,6 +4,9 @@ public class CaesarCipher {
 
     private String letter;
     private int shift;
+    String alphabet = "abcdefghijklmnopqrstuvwxyz";
+    String cipherCode = "";
+    String decipherCode = "";
 
     public CaesarCipher(String letter, int shift) {
         this.letter = letter;
@@ -19,8 +22,6 @@ public class CaesarCipher {
     }
 
     public String cipherEncryption() {
-        String alphabet = "abcdefghijklmnopqrstuvwxyz";
-        String cipherCode = "";
 
         for (int i = 0; i< letter.length(); i++){
             int indexOfText = alphabet.indexOf(letter.charAt(i));
@@ -32,8 +33,6 @@ public class CaesarCipher {
     }
 
     public String cipherDecryption() {
-        String alphabet = "abcdefghijklmnopqrstuvwxyz";
-        String decipherCode = "";
 
         for (int i = 0; i < letter.length(); i++){
             int indexOfCode = alphabet.indexOf(letter.charAt(i));
