@@ -22,9 +22,10 @@ public class CaesarCipher {
     }
 
     public String cipherEncryption() {
+        String text = letter.toLowerCase();
 
-        for (int i = 0; i< letter.length(); i++){
-            int indexOfText = alphabet.indexOf(letter.charAt(i));
+        for (int i = 0; i< text.length(); i++){
+            int indexOfText = alphabet.indexOf(text.charAt(i));
             int indexOfEncryption = (indexOfText + shift) % 26;
             char encryptionLetter = alphabet.charAt(indexOfEncryption);
             cipherCode += encryptionLetter;
@@ -33,9 +34,10 @@ public class CaesarCipher {
     }
 
     public String cipherDecryption() {
+        String text = letter.toLowerCase();
 
-        for (int i = 0; i < letter.length(); i++){
-            int indexOfCode = alphabet.indexOf(letter.charAt(i));
+        for (int i = 0; i < text.length(); i++){
+            int indexOfCode = alphabet.indexOf(text.charAt(i));
             int indexOfDecryption = (indexOfCode - shift) % 26;
             char decryptedLetter= alphabet.charAt(indexOfDecryption);
             decipherCode += decryptedLetter;

@@ -52,4 +52,10 @@ public class CaesarCipherTest {
         CaesarCipher testEncryption = new CaesarCipher("barsil", 3);
         assertEquals("eduvlo", testEncryption.cipherEncryption());
     }
+
+    @Test
+    public void newCaesarCipher_testUpperCaseWord_shift_3() {
+        CaesarCipher testEncryption = new CaesarCipher("BARSIL", 3);
+        assertEquals("eduvlo", testEncryption.cipherEncryption());
+    }
 }
