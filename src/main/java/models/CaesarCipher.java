@@ -30,4 +30,17 @@ public class CaesarCipher {
         }
         return cipherCode;
     }
+
+    public String cipherDecryption() {
+        String alphabet = "abcdefghijklmnopqrstuvwxyz";
+        String decipherCode = "";
+
+        for (int i = 0; i < letter.length(); i++){
+            int indexOfCode = alphabet.indexOf(letter.charAt(i));
+            int indexOfDecryption = (indexOfCode - shift) % 26;
+            char decryptedLetter= alphabet.charAt(indexOfDecryption);
+            decipherCode += decryptedLetter;
+        }
+        return decipherCode;
+    }
 }
