@@ -43,7 +43,7 @@ In case of of any bugs found please contact using the information below.
 
 ## Contact Information
 email - barsiljohn@gmail.com
-call - +254 717304712
+call - +254 707159461
 
 ## Copyright and license.
 (c) 2020 Barsil Odiwuor Ochola.
