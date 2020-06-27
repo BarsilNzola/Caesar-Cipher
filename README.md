@@ -11,10 +11,10 @@ If the word 'name' was encrypted using a key of 1 it would return 'obnf'.If I wa
 
 ## Prerequisites & setup
 ### Prerequisites
-Git.
-Java
-Text Editor of your choice.
-Gradle
+1.Git.
+2.Java
+3.Text Editor of your choice.
+4.Gradle
 
 ### Set up
 First clone the repo into your machine by running git clone https://github.com/BarsilNzola/Caesar-Cipher on your terminal.
@@ -23,9 +23,10 @@ navigate into the build\classes/java/main/ directory created using the command c
 run the command java App.
 
 ## BDD
-example	input	                    output
-encrypt => word: 'barsil', key: 2	String=>word, Integer=>key	String:'dctukn'
-decrypt => word: 'dctukn', key: 2	String=>word, Integer=>key	String:'barsil'
+|   example	                        |   input	                |    output     |
+|-----------------------------------|:-------------------------:|--------------:|
+| encrypt => word: 'barsil', key: 2 |String=>word, Integer=>key	|String:'dctukn'|
+| decrypt => word: 'dctukn', key: 2	|String=>word, Integer=>key	|String:'barsil'|
 
 ## How to use
 Type number '1' to encrypt.
