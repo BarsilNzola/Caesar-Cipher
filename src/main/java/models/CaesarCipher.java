@@ -39,6 +39,10 @@ public class CaesarCipher {
         for (int i = 0; i < text.length(); i++){
             int indexOfCode = alphabet.indexOf(text.charAt(i));
             int indexOfDecryption = (indexOfCode - shift) % 26;
+            if (indexOfDecryption < 0)
+            {
+                indexOfDecryption = alphabet.length() + indexOfDecryption;
+            }
             char decryptedLetter= alphabet.charAt(indexOfDecryption);
             decipherCode += decryptedLetter;
         }
